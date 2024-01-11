@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:label="@string/ttl_login"
+        android:name="com.vishwa.hotelorderapp.LoginFragment"
+        tools:layout="@layout/fragment_login"
+        android:id="@+id/loginFragment">
+        <action
+            android:id="@+id/action_loginFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+    </fragment>
+    <fragment
+        android:label="@string/ttl_Signup"
+        android:name="com.vishwa.hotelorderapp.SignUpFragment"
+        tools:layout="@layout/fragment_signup"
+        android:id="@+id/signUpFragment">
+    </fragment>
+
+</navigation>
